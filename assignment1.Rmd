@@ -1,0 +1,84 @@
+---
+title: "Getting Stated with R"
+author: "Jin Chang"
+date: "1/14/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+#The Intro
+This is *Jinc132*’s first assignment for _Geog458_. Our course page can be accessed here.
+
+## LINK
+[Here](https://canvas.uw.edu/courses/1269928)
+
+## Image
+[This is where reside 70% of the time!](https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/98/2014/09/07214435/Signature_Stacked_Purple_Hex.png)
+
+### Math
+This is the _pythorean theorem_ : \[ x^n + y^n = z^n \]
+## Table of Values
+data.table(Months = c("January","Febuary","March","April", "May", "December"),
+          Year = c(2011, 2014, 2016, 2015, 2016, 2019))
+```{r, echo=TRUE}
+library(rmarkdown)
+
+#Task 6
+100/10+2
+
+100/(10+2)
+
+sqrt(140) * 40
+
+log10(2^2 - 30)
+
+log(982) - 3
+
+#Task 7
+p1 = 3 * 5
+p2 = 3 / p1
+
+log10(p1 + p2)
+
+p1^p2
+
+(p1 * 450) / (p2 / 30) ^(2/100)
+
+# Task 8 
+val = seq(1:30)
+strings = c("Mary","had","a","little","lamb")
+length(val)
+length(strings)
+
+sum(val)
+#sum(strings)
+
+# Task 9
+num = seq(1:5)
+hiVal = seq(6,10)
+num + hiVal
+
+vect3 = num * hiVal
+
+# Task 10
+combined = c(num,hiVal)
+matrix = rbind(num,hiVal,vect3)
+print(matrix)
+
+df = data.frame(matrix)
+print(df)
+```
+##Loading the Data
+This is how to load data into R and how to convert it.
+
+```{r,echo=TRUE}
+library(tidyverse)
+
+file = read.table("China_EO_49to17.csv")
+df = data.frame(file)
+data = as_tibble(file)
+```
+
