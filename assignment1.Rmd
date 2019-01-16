@@ -16,12 +16,12 @@ This is *Jinc132*’s first assignment for **Geog458**. Our course page can be a
 [Here](https://canvas.uw.edu/courses/1269928)
 
 ## Image
-![This is where reside 70% of the time!](https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/98/2014/09/07214435/Signature_Stacked_Purple_Hex.png)
+![This is where I reside 70% of the time!](https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/98/2014/09/07214435/Signature_Stacked_Purple_Hex.png)
 
 ### Math
 This is the _pythorean theorem_ : \[ x^n + y^n = z^n \]
 
-## Table of Values
+### Table of Values
 
   Month      Days
 ----------  ------
@@ -33,11 +33,9 @@ This is the _pythorean theorem_ : \[ x^n + y^n = z^n \]
  April        14
 [Math-Geeks]: https://en.wikipedia.org/wiki/Birthday
 
-
+###Task 6
 ```{r, echo=TRUE}
 library(rmarkdown)
-
-#Task 6
 100/10+2
 
 100/(10+2)
@@ -47,8 +45,9 @@ sqrt(140) * 40
 log10(1/3)
 
 log(982) - 3
-
-#Task 7
+```
+###Task 7
+```{r}
 p1 <- 3 * 5
 p2 <- 3 / p1
 
@@ -57,8 +56,10 @@ log10(p1 + p2)
 p1^p2
 
 (p1 * 450) / (p2 / 30) ^(2/100)
+```
 
-# Task 8 
+### Task 8 
+```{r}
 val <- seq(1:30)
 strings <- c("Mary","had","a","little","lamb")
 length(val)
@@ -66,15 +67,19 @@ length(strings)
 
 sum(val)
 #sum(strings)
+```
 
-# Task 9
+### Task 9
+```{r}
 num <- seq(1:5)
 hiVal <- seq(6,10)
 num + hiVal
 
 vect3 <- num * hiVal
+```
 
-# Task 10
+### Task 10
+```{r}
 combined <- c(num,hiVal)
 matrix <- rbind(num,hiVal,vect3)
 print(matrix)
@@ -91,7 +96,6 @@ library(tidyverse)
 file <- read.csv("China_EO_49to17.csv", fileEncoding = "latin1")
 data <- as_tibble(file)
 
-# Task 14
 Year = seq(from=1949,to=2017)
 data$Year = Year
 
